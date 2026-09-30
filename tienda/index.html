@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fichas Mag - Fichas para pizarra magnética de fútbol</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin:0; font-family: Arial, sans-serif; color:#222; background:#f4f4f4; }
+  header { background:#0a5; color:#fff; padding:20px; text-align:center; }
+  header h1 { margin:0; font-size:28px; }
+  header p { margin:5px 0 0; opacity:.9; font-size:14px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:16px; padding:20px; max-width:1000px; margin:auto; }
+  .card { background:#fff; border-radius:8px; padding:12px; text-align:center; box-shadow:0 2px 6px rgba(0,0,0,.1); }
+  .img { height:130px; display:flex; align-items:center; justify-content:center; background:#e8f5ee; border-radius:6px; }
+  .img svg { width:120px; height:120px; }
+  .player { transform-origin:50px 50px; transition:transform .4s; }
+  .card:hover .player { transform:rotate(40deg); }
+  .card h3 { margin:10px 0 4px; font-size:16px; }
+  .card .price { color:#0a5; font-weight:bold; margin:0 0 10px; }
+  button { background:#0a5; color:#fff; border:0; padding:9px 16px; border-radius:5px; cursor:pointer; width:100%; }
+  button:hover { background:#084; }
+  .nota { text-align:center; font-size:13px; color:#666; margin:0 20px; }
+  footer { text-align:center; padding:20px; font-size:13px; color:#666; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>⚽ Fichas Mag</h1>
+  <p>Fichas imantadas para pizarra magnética de fútbol · vista superior con orientación</p>
+</header>
+
+<div class="grid">
+
+  <div class="card">
+    <div class="img">
+      <svg viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="44" fill="#fff" stroke="#bbb" stroke-width="2"/>
+        <circle cx="50" cy="50" r="38" fill="none" stroke="#ddd" stroke-width="6"/>
+        <g class="player">
+          <path d="M50 4 L57 14 L50 11 L43 14 Z" fill="#e11"/>
+          <rect x="42" y="58" width="7" height="26" rx="3.5" fill="#333"/>
+          <rect x="51" y="58" width="7" height="26" rx="3.5" fill="#333"/>
+          <rect x="29" y="44" width="8" height="24" rx="4" fill="#e8b98a" transform="rotate(-10 33 56)"/>
+          <rect x="63" y="44" width="8" height="24" rx="4" fill="#e8b98a" transform="rotate(10 67 56)"/>
+          <path d="M35 54 Q35 38 50 38 Q65 38 65 54 Q50 60 35 54 Z" fill="#f5c518" stroke="#333" stroke-width="1.5"/>
+          <circle cx="50" cy="30" r="10" fill="#e8b98a" stroke="#333" stroke-width="1.5"/>
+        </g>
+      </svg>
+    </div>
+    <h3>Portero</h3>
+    <p class="price">2,50 €</p>
+    <button>Comprar</button>
+  </div>
+
+  <div class="card">
+    <div class="img">
+      <svg viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="44" fill="#fff" stroke="#bbb" stroke-width="2"/>
+        <circle cx="50" cy="50" r="38" fill="none" stroke="#ddd" stroke-width="6"/>
+        <g class="player">
+          <path d="M50 4 L57 14 L50 11 L43 14 Z" fill="#e11"/>
+          <rect x="42" y="58" width="7" height="26" rx="3.5" fill="#333"/>
+          <rect x="51" y="58" width="7" height="26" rx="3.5" fill="#333"/>
+          <rect x="29" y="44" width="8" height="24" rx="4" fill="#e8b98a" transform="rotate(-10 33 56)"/>
+          <rect x="63" y="44" width="8" height="24" rx="4" fill="#e8b98a" transform="rotate(10 67 56)"/>
+          <path d="M35 54 Q35 38 50 38 Q65 38 65 54 Q50 60 35 54 Z" fill="#1e4fa3" stroke="#333" stroke-width="1.5"/>
+          <circle cx="50" cy="30" r="10" fill="#e8b98a" stroke="#333" stroke-width="1.5"/>
+        </g>
+      </svg>
+    </div>
+    <h3>Defensa central</h3>
+    <p class="price">3,00 €</p>
+    <button>Comprar</button>
+  </div>
+
+  <div class="card">
+    <div class="img">
+      <svg viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="44" fill="#fff" stroke="#bbb" stroke-width="2"/>
+        <circle cx="50" cy="50" r="38" fill="none" stroke="#ddd" stroke-width="6"/>
+        <g class="player">
+          <path d="M50 4 L57 14 L50 11 L43 14 Z" fill="#e11"/>
+          <rect x="42" y="58" width="7" height="26" rx="3.5" fill="#333"/>
+          <rect x="51" y="58" width="7" height="26" rx="3.5" fill="#333"/>
+          <rect x="29" y="44" width="8" height="24" rx="4" fill="#e8b98a" transform="rotate(-10 33 56)"/>
+          <rect x="63" y="44" width="8" height="24" rx="4" fill="#e8b98a" transform="rotate(10 67 56)"/>
+          <path d="M35 54 Q35 38 50 38 Q65 38 65 54 Q50 60 35 54 Z" fill="#d33" stroke="#333" stroke-width="1.5"/>
+          <circle cx="50" cy="30" r="10" fill="#e8b98a" stroke="#333" stroke-width="1.5"/>
+        </g>
+      </svg>
+    </div>
+    <h3>Centrocampista</h3>
+    <p class="price">3,00 €</p>
+    <button>Comprar</button>
+  </div>
+
+  <div class="card">
+    <div class="img">
+      <svg viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="44" fill="#fff" stroke="#bbb" stroke-width="2"/>
+        <circle cx="50" cy="50" r="38" fill="none" stroke="#ddd" stroke-width="6"/>
+        <g class="player">
+          <path d="M50 4 L57 14 L50 11 L43 14 Z" fill="#e11"/>
+          <rect x="42" y="58" width="7" height="26" rx="3.5" fill="#333"/>
+          <rect x="51" y="58" width="7" height="26" rx="3.5" fill="#333"/>
+          <rect x="29" y="44" width="8" height="24" rx="4" fill="#e8b98a" transform="rotate(-10 33 56)"/>
+          <rect x="63" y="44" width="8" height="24" rx="4" fill="#e8b98a" transform="rotate(10 67 56)"/>
+          <path d="M35 54 Q35 38 50 38 Q65 38 65 54 Q50 60 35 54 Z" fill="#eee" stroke="#333" stroke-width="1.5"/>
+          <circle cx="50" cy="30" r="10" fill="#e8b98a" stroke="#333" stroke-width="1.5"/>
+        </g>
+      </svg>
+    </div>
+    <h3>Delantero</h3>
+    <p class="price">3,00 €</p>
+    <button>Comprar</button>
+  </div>
+
+</div>
+
+<p class="nota">La flecha roja indica la orientación de la ficha. Pasa el ratón por encima para girarla.</p>
+
+<footer>© 2026 Fichas Mag — Página de ejemplo</footer>
+
+</body>
+</html>
